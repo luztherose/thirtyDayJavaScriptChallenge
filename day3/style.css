@@ -16,7 +16,7 @@ when using a variable in css, we have to use var() and pass it the variable
 img {
     padding:var(--spacing);
     background:var(--base);
-    filter: var(--blur);
+    filter: blur(var(--blur));
 }
 .hl {
     color: var(--base);
