@@ -1,0 +1,43 @@
+/*
+    CSS variables can be updated with javaScript
+    we need to declare our css variables inside an element
+    root is the highest level pretty similar to html
+*/
+:root {
+    /* setting defaults values for our variables */
+    --base:#ffc600 ;
+    --spacing:10px; 
+    --blur:10px;
+}
+/* Using our variables
+when using a variable in css, we have to use var() and pass it the variable
+-- is the standard in css for variable as $ is the standard in sass
+*/
+img {
+    padding:var(--spacing);
+    background:var(--base);
+    filter: blur(var(--blur));
+}
+.hl {
+    color: var(--base);
+}
+/*
+    misc styles, nothing to do with CSS variables
+*/
+    body {
+        text-align: center;
+        background: #193549;
+        color: white;
+        font-family: 'helvetica neue', sans-serif;
+        font-weight: 100;
+        font-size: 50px;
+    }
+
+    .controls {
+        margin-bottom: 50px;
+    }
+
+    input {
+        width: 100px;
+    }
+
